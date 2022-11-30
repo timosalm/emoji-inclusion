@@ -10,16 +10,22 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>emoji-inclusion</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.o</version>
 	<name>emoji-inclusion</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<springdoc.version>1.6.12</springdoc.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-webmvc-core</artifactId>
+			<version>${springdoc.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

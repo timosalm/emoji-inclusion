@@ -18,6 +18,15 @@ spec:
     env:
       - name: BP_JVM_VERSION
         value: "17"
+  params:
+  - name: api_descriptor
+    value:
+      type: openapi
+      location:
+        path: "/v3/api-docs"
+      system: emoji-system
+      owner: team-vmware-tanzu-se
+      description: "A set of API endpoints to manage the resources within the emoji inclusion app."
   serviceClaims:
     - name: db
       ref:
