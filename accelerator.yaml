@@ -80,5 +80,5 @@ engine:
       chain:
         - type: ReplaceText
           regex:
-            pattern: "serviceClaims([\s\S]*)db-binding-compatible"
-            with: ""
+            pattern: "serviceClaims[\\s\\S]+?db-binding-compatible"
+            with: "''"
