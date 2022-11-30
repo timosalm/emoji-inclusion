@@ -79,6 +79,6 @@ engine:
       condition: "#includeServiceBindings == false"
       chain:
         - type: ReplaceText
-          substitutions:
-            - text: "  serviceClaims:    \n- name: db\n    ref:\n      apiVersion: services.apps.tanzu.vmware.com/v1alpha1\n      kind: ResourceClaim\n      name: db-binding-compatible"
-              with: ""
+          regex:
+            pattern: "serviceClaims([\s\S]*)db-binding-compatible"
+            with: ""
