@@ -17,4 +17,7 @@ public class EmojiApplicationService {
         return emojiRepository.findAll();
     }
 
+    void addRandomEmoji() {
+        emojiRepository.save(Emoji.random());
+    }
 }

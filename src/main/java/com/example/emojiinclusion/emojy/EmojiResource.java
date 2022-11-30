@@ -23,4 +23,10 @@ class EmojiResource {
         return ResponseEntity.ok(emojiApplicationService.fetchEmojis()
                 .stream().map(Emoji::getStringValue).collect(Collectors.toList()));
     }
+
+    @PostMapping
+    public ResponseEntity<Void> addRandomEmoji() {
+        this.emojiApplicationService.addRandomEmoji();
+        return ResponseEntity.noContent().build();
+    }
 }
