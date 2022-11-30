@@ -1,11 +1,11 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: emoji-inclusion
+  name: inclusion
   annotations:
     autoscaling.knative.dev/min-scale: "5"
   labels:
-    app.kubernetes.io/part-of: emoji-inclusion
+    app.kubernetes.io/part-of: inclusion
     apps.tanzu.vmware.com/workload-type: web
     apps.tanzu.vmware.com/has-tests: "true"
 spec:
@@ -24,9 +24,9 @@ spec:
       type: openapi
       location:
         path: "/v3/api-docs"
-      system: emoji-system
+      system: inclusion-system
       owner: team-vmware-tanzu-se
-      description: "A set of API endpoints to manage the resources within the emoji inclusion app."
+      description: "A set of API endpoints to manage the resources within the inclusion app."
   serviceClaims:
     - name: db
       ref:

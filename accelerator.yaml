@@ -73,7 +73,7 @@ engine:
           substitutions:
             - text: 17
               with: "#javaVersion.toString()"
-            - text: "name: emoji-inclusion"
+            - text: "'name: inclusion'"
               with: "'name: ' + #artifactId"
     - include: [ "config/workload.yaml" ]
       condition: "#includeServiceBindings == false"
