@@ -76,9 +76,15 @@ engine:
             - text: "name: emoji-inclusion"
               with: "name: #artifactId"
     - include: [ "config/workload.yaml" ]
-      condition: "!#includeServiceBindings"
+      condition: "#includeServiceBindings == false"
       chain:
         - type: ReplaceText
           substitutions:
-            - text: 17
-              with: "#javaVersion.toString()"
+            - text: |
+                  serviceClaims:
+                    - name: db
+                      ref:
+                        apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+                        kind: ResourceClaim
+                        name: db-binding-compatible
+              with: ""
