@@ -1,7 +1,7 @@
 accelerator:
   displayName: Inclusion
   description: Demonstrates service binding capabilites via inclusion
-  iconUrl: https://spring.io/images/spring-initializr-4291cc0115eb104348717b82161a81de.svg
+  iconUrl: https://github.com/tsalm-pivotal/emoji-inclusion/raw/main/acclerator.png
   tags:
     - java
     - spring
