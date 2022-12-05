@@ -7,7 +7,7 @@ metadata:
   labels:
     app.kubernetes.io/part-of: inclusion
     apps.tanzu.vmware.com/workload-type: web
-#    apps.tanzu.vmware.com/has-tests: "true"
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   source:
     git:
