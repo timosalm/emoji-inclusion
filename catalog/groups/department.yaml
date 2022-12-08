@@ -13,4 +13,4 @@ spec:
     email: tanzu@vmware.com
     picture: https://blogs.vmware.com/cloudprovider/files/2021/09/logo-vmware-tanzu-square-Header-327x324.png
   parent: vmware-corp
-  children: [inclusive-dev-team]
+  children: [team-vmware-tanzu-se]

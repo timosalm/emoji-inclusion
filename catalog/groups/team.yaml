@@ -1,14 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: inclusive-dev-team
+  name: team-vmware-tanzu-se
   description: This is the team that develops the inclusion app
 spec:
   type: team
   profile:
-    displayName: The inclusive dev team
+    displayName: The VMware Tanzu SE team
     email: inclusive-dev-team@vmware.com
-    picture: https://spring.io/images/spring-logo-2022-93b99aee11ba10c57283810ff6f7f500.svg
+    picture: https://blogs.vmware.com/cloudprovider/files/2021/09/logo-vmware-tanzu-square-Header.png
   parent: vmware-tanzu-bu
   children: []
 ---
@@ -21,4 +21,4 @@ spec:
     displayName: Dev User
     email: devuser@team.com
     picture: https://pbs.twimg.com/profile_images/1235868806079057921/fTL08u_H_400x400.png
-  memberOf: [inclusive-dev-team]
+  memberOf: [team-vmware-tanzu-se]

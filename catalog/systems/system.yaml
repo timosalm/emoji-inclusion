@@ -6,5 +6,5 @@ metadata:
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:
-  owner: inclusive-dev-team
+  owner: team-vmware-tanzu-se
   domain: emoji-domain

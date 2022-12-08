@@ -24,7 +24,7 @@ spec:
       type: openapi
       location:
         path: "/v3/api-docs"
-      system: inclusion-system
+      system: emoji-world
       owner: team-vmware-tanzu-se
       description: "A set of API endpoints to manage the resources within the inclusion app."
   serviceClaims:

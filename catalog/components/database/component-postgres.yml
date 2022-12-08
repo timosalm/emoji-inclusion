@@ -14,5 +14,5 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: inclusive-dev-team
+  owner: team-vmware-tanzu-se
   system: emoji-world
