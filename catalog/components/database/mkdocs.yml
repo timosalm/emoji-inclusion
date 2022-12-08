@@ -1,0 +1,7 @@
+site_name: 'inclusion-database'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core

@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: vmware-tanzu-bu
+  description: The VMware Tanzu BU
+  links:
+    - url: https://tanzu.vmware.com
+      title: Website
+spec:
+  type: sub-department
+  profile:
+    displayName: Tanzu Application Platform
+    email: tanzu@vmware.com
+    picture: https://blogs.vmware.com/cloudprovider/files/2021/09/logo-vmware-tanzu-square-Header-327x324.png
+  parent: vmware-corp
+  children: [inclusive-dev-team]

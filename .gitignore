@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+catalog/components/.DS_Store
+catalog/.DS_Store
+catalog/systems/.DS_Store
+catalog/site/.DS_Store
+catalog/domains/.DS_Store
+catalog/components/service/.DS_Store
+catalog/components/database/.DS_Store
+.DS_Store

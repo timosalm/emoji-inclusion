@@ -1,0 +1,7 @@
+site_name: 'Emoji Domain'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core

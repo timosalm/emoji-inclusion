@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: database-postgres
+  description: Database to store emojis
+  tags:
+    - database
+    - postgres
+    - inclusion
+    - diversity
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=inclusion'
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: inclusive-dev-team
+  system: emoji-world

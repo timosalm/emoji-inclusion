@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name:  emoji-world
+  description: Emoji World
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  owner: inclusive-dev-team
+  domain: emoji-domain

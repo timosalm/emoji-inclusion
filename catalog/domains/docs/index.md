@@ -1,0 +1,3 @@
+# Demo Inclusion Domain
+
+Binding an application workload to a backing service such as a PostgreSQL is one of the most important use cases within the context of the VMware Tanzu Application Platform. This use case is made possible by the Service Binding Specification for Kubernetes. With the service binding that is defined in the workload.yaml, the credentials that are required for the connection to the PostgreSQL database are magically injected as environment variables into the container.

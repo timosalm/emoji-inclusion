@@ -1,15 +1,14 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: Location
 metadata:
   name: inclusion
-  description: Emoji Inclusion App
-  tags:
-  - java
-  - spring
-  - tanzu
+  description: This is an application that promotes inclusion 
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=inclusion'
+    'backstage.io/techdocs-ref': dir:.
 spec:
-  type: service
-  lifecycle: experimental
-  owner: default-team
+  targets:
+    - ./groups/emoji-org.yaml
+    - ./components/database/component-postgres.yml
+    - ./components/service/component.yml
+    - ./systems/emoji-world.yaml
+    - ./domains/emoji-domain.yml

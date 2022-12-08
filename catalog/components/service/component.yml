@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: inclusion-service
+  description: Service collecting all emojis
+  tags:
+    - java
+    - spring
+    - emoji
+    - inclusion
+    - diversity
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=inclusion'
+    'backstage.io/techdocs-ref': dir:.
+  links:
+    - url: https://spring.io/
+      title: Spring makes Java simple, modern, productive, reactive, cloud-ready
+spec:
+  type: service
+  lifecycle: experimental
+  owner: inclusive-dev-team
+  system: emoji-world
+  dependsOn:
+    - Component:database-postgres

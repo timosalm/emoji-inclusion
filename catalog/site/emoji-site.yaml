@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Site
+metadata:
+  name:  emoji-site
+  description: Emoji Site
+  annotations:
+    'backstage.io/techdocs-ref': dir:.
+spec:
+  owner: inclusive-dev-team
+  domain: emoji-domain
