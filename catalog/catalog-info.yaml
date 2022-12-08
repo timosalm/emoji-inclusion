@@ -7,8 +7,8 @@ metadata:
     'backstage.io/techdocs-ref': dir:.
 spec:
   targets:
-    - ./groups/emoji-org.yaml
+    - ./groups/org.yaml
     - ./components/database/component-postgres.yml
     - ./components/service/component.yml
-    - ./systems/emoji-world.yaml
-    - ./domains/emoji-domain.yml
+    - ./systems/system.yaml
+    - ./domains/domain.yml
