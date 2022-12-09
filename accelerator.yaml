@@ -81,4 +81,4 @@ engine:
         - type: ReplaceText
           regex:
             pattern: "serviceClaims[\\s\\S]+?db-binding-compatible"
-            with: "'# service claims here'"
+            with: "''"
