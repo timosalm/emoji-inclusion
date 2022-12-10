@@ -3,6 +3,8 @@ name: Publish TechDocs Site
 on:
   push:
     branches: [main]
+    paths:
+    - "catalog/**"
 jobs:
   publish-techdocs-site:
     runs-on: ubuntu-latest
