@@ -3,8 +3,6 @@ name: Publish TechDocs Site
 on:
   push:
     branches: [main]
-    paths:
-    - "catalog/**"
 jobs:
   publish-techdocs-site:
     runs-on: ubuntu-latest
@@ -23,15 +21,15 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.9'
+      
+      - name: Install yq
+        run: sudo snap install yq
 
       - name: Install techdocs-cli
         run: npm install -g @techdocs/cli
 
       - name: Install mkdocs and mkdocs plugins
         run: python -m pip install mkdocs-techdocs-core==1.*
-        
-      - name: Install yq
-        run: sudo snap install yq
 
       - name: Generate and publish docs
         run: |
