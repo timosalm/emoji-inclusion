@@ -38,7 +38,7 @@ jobs:
             file_dir=$(dirname $f)
             catalog_file=$(find "${file_dir}" -name '**.yaml' -print | head -n 1)
             entity_kind=$(yq e '.kind' $catalog_file)
-            entity_name=$(yq e '.metadata.name' $catalog_file))
+            entity_name=$(yq e '.metadata.name' $catalog_file)
 
             echo "Docs file: $f Dir: $file_dir Catalog file: $catalog_file Kind: $entity_kind Name: entity_name"
             techdocs-cli generate --no-docker --source-dir ${file_dir}/ --output-dir ${file_dir}/site
