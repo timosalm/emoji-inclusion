@@ -18,12 +18,14 @@ class EmojiResource {
         this.emojiApplicationService = emojiApplicationService;
     }
 
+    @CrossOrigin
     @GetMapping
     public ResponseEntity<List<String>> fetchEmojis() {
         return ResponseEntity.ok(emojiApplicationService.fetchEmojis()
                 .stream().map(Emoji::getStringValue).collect(Collectors.toList()));
     }
 
+    @CrossOrigin
     @PostMapping
     public ResponseEntity<Void> addRandomEmoji() {
         this.emojiApplicationService.addRandomEmoji();
