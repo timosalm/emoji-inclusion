@@ -8,7 +8,7 @@ metadata:
 spec:
   targets:
     - ./groups/org.yaml
-    - ./components/database/component-postgres.yml
+    - ./resources/database/resource-postgres.yml
     - ./components/service/component.yml
     - ./systems/system.yaml
     - ./domains/domain.yml
