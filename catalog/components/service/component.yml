@@ -21,4 +21,4 @@ spec:
   owner: team-vmware-tanzu-se
   system: emoji-world
   dependsOn:
-    - Component:database-postgres
+    - Resource:database-postgres
