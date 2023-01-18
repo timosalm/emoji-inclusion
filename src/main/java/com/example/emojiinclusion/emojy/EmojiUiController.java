@@ -17,7 +17,7 @@ public class EmojiUiController {
 
     @GetMapping
     public String fetchUI(Model model) {
-        model.addAttribute("emojis", applicationService.fetchEmojis().stream().map(Emoji::getStringValue)
+        model.addAttribute("emojis", applicationService.fetchEmojis().stream().limit(6).map(Emoji::getStringValue)
                 .collect(Collectors.joining ("")));
         return "index";
     }
