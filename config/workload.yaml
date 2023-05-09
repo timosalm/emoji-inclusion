@@ -12,7 +12,7 @@ metadata:
 spec:
   source:
     git:
-      url: https://github.com/tsalm-pivotal/emoji-inclusion.git
+      url: https://github.com/tsalm-vmware/emoji-inclusion.git
       ref:
         branch: main
   build:
