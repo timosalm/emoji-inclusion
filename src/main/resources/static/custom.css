@@ -10,6 +10,18 @@
     white-space: nowrap;
 }
 
+.subtitle {
+    font-size: 80%;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-style: italic;
+}
+
+.nav-link:hover span {
+    color: #FFF;
+}
+
+
 .clr-row {
     align-items: center;
     justify-content: center;
@@ -24,7 +36,7 @@
     margin-left: 5px;
 }
 
-.nav-link{
+.nav-link {
     cursor: pointer;
 }
 
