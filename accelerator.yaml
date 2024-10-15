@@ -34,7 +34,7 @@ accelerator:
       required: true
     - name: includeServiceBindings
       label: Include Service Bindings
-      inputType: text
+      inputType: checkbox
       dataType: boolean
       defaultValue: false
 engine:
