@@ -16,7 +16,5 @@ public class EmojiRepositoryPopulator implements ApplicationListener<Application
     @Override
     public void onApplicationEvent(ApplicationReadyEvent event) {
         this.emojiRepository.save(Emoji.random());
-        this.emojiRepository.save(Emoji.random());
-        this.emojiRepository.save(Emoji.random());
     }
 }
