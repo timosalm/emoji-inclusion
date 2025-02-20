@@ -2,41 +2,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/@clr/ui@16.3.7/clr-ui.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="custom.css" rel="stylesheet">
 </head>
 
 <body>
 <div class="main-container">
-    <header class="header-6">
-        <div class="branding">
-            <a class="nav-link">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #00364d">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
                 <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#fff" d="M18,32.43a1,1,0,0,1-.61-.21C11.83,27.9,8,24.18,5.32,20.51,1.9,15.82,1.12,11.49,3,7.64c1.34-2.75,5.19-5,9.69-3.69A9.87,9.87,0,0,1,18,7.72a9.87,9.87,0,0,1,5.31-3.77c4.49-1.29,8.35.94,9.69,3.69,1.88,3.85,1.1,8.18-2.32,12.87C28,24.18,24.17,27.9,18.61,32.22A1,1,0,0,1,18,32.43ZM10.13,5.58A5.9,5.9,0,0,0,4.8,8.51c-1.55,3.18-.85,6.72,2.14,10.81A57.13,57.13,0,0,0,18,30.16,57.13,57.13,0,0,0,29.06,19.33c3-4.1,3.69-7.64,2.14-10.81-1-2-4-3.59-7.34-2.65a8,8,0,0,0-4.94,4.2,1,1,0,0,1-1.85,0,7.93,7.93,0,0,0-4.94-4.2A7.31,7.31,0,0,0,10.13,5.58Z"></path></svg>
                 <span class="title">Inclusion</span>
-                <span class="subtitle">powered by <span th:utext="${database}" /></span>
+                <span class="subtitle small"><small>powered by <span th:utext="${database}" /></small></span>
             </a>
-        </div>
-        <div class="header-actions">
-            <a class="nav-link" onclick="window.location.reload();">
+
+            <a class="nav-link d-flex" onclick="window.location.reload();">
                 <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#fff" d="M22.4,11.65a1.09,1.09,0,0,0,1.09,1.09H34.43V1.81a1.09,1.09,0,1,0-2.19,0V8.95a16.41,16.41,0,1,0,1.47,15.86,1.12,1.12,0,0,0-2.05-.9,14.18,14.18,0,1,1-1.05-13.36H23.5A1.09,1.09,0,0,0,22.4,11.65Z"></path></svg>
             </a>
         </div>
-    </header>
-    <div class="content-container">
-        <div class="content-area">
-            <div class="clr-row">
-                <div class="clr-col">
-                    <div class="card">
-                        <div class="card-block">
-                            <div class="card-text"><span class="emojis" th:utext="${emojis}" /></div>
-                        </div>
-                    </div>
-                </div>
+    </nav>
+    <div class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;background-color: #fafafa">
+        <div class="card">
+            <div class="card-body">
+                <span class="emojis" th:utext="${emojis}" />
             </div>
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

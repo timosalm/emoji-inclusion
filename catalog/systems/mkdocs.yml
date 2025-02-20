@@ -1,7 +1,0 @@
-site_name: 'emoji-site'
-
-nav:
-  - Home: index.md
-
-plugins:
-  - techdocs-core
