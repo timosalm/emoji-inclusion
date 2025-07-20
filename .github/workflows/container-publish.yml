@@ -29,7 +29,7 @@ jobs:
       with:
         dependency-graph: generate-and-submit
     - name: Create container image
-      run: ./gradlew bootBuildImage --imageName="ghcr.io/${{ github.repository }}:inclusion"
+      run: ./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName="ghcr.io/${{ github.repository }}:inclusion"
 
     - uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
       with:
